@@ -25,3 +25,7 @@ module "vpc" {
 module "storage" {
   source = "../../modules/storage"
 }
+module "compute" {
+  source     = "../../modules/compute"
+  depends_on = [module.vpc]
+}
