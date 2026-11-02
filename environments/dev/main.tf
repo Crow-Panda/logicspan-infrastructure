@@ -22,3 +22,6 @@ provider "google" {
 module "vpc" {
   source = "../../modules/network"
 }
+module "storage" {
+  source = "../../modules/storage"
+}
